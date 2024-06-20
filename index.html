@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero</title>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .tab {
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            /* background-color: #ddd; */
+        }
+
+        .tab button.active {
+            color: red;
+            border-bottom: 2px solid red;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+
+        .tabcontent {
+            animation: fadeEffect 1s;
+        }
+
+        .biketab {
+            display: flex;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div class="tabtexthero">
+        <h2>EXPLORE OUR PRODUCTS</h2>
+        <P>Check out our range of motercycles and scooters with exciting features and latest technolgy</P>
+        <div class="tabhero">
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'newlaunches')" id="defaultOpen">NEW LAUNCHES</button>
+                <button class="tablinks" onclick="openCity(event, 'practical')">PRACTICAL</button>
+                <button class="tablinks" onclick="openCity(event, 'executive')">EXECUTIVE</button>
+                <button class="tablinks" onclick="openCity(event, 'performance')">PERFORMANCE</button>
+                <button class="tablinks" onclick="openCity(event, 'scooters')">SCOOTERS</button>
+            </div>
+
+            <div id="newlaunches" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/splendor-Xtec.png" alt="bike_images" loading="lazy">
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Splendor+.png" alt="bike_images" loading="lazy"></div>
+                </div>
+            </div>
+
+            <div id="practical" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/splendor-Xtec.png" alt="bike_images" loading="lazy">
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Splendor+.png" alt="bike_images" loading="lazy"></div>
+                </div>
+            </div>
+
+            <div id="executive" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/splendor-Xtec.png" alt="bike_images" loading="lazy">
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Splendor+.png" alt="bike_images" loading="lazy"></div>
+                </div>
+            </div>
+
+            <div id="performance" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/splendor-Xtec.png" alt="bike_images" loading="lazy">
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Splendor+.png" alt="bike_images" loading="lazy"></div>
+                </div>
+            </div>
+
+            <div id="scooters" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/HF-100-1.png" alt="bike_images" loading="lazy"></div>
+                    <div class="herobikeimg"><img src="/Images/splendor-Xtec.png" alt="bike_images" loading="lazy">
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Splendor+.png" alt="bike_images" loading="lazy"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
 </body>
+
 </html>
