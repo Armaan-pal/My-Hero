@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+}
+
+h1 {
+    font-size: 4.26vw;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: #303030;
+}
+
+h3 {
+    font-size: 1.765vw;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+}
+
+p {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    color: #303030;
+    text-align: center;
+}
+
+span {
+    font-size: 1.029vw;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-width {
+    max-width: 1236px;
+    width: 100%;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tab, .tabbtm {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    gap: 23px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tab button, .tabbtm button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    text-transform: uppercase;
+    color: #303030;
+    padding: 0 6px 0 6px;
+    font-size: 24px;
+    white-space: nowrap;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.tabbtm button.activebtm {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.tabcontent, .tabcontentbm {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent, .tabcontentbtm {
+    animation: fadeEffect 1s;
+    padding-top: 73px;
+}
+
+.tabtexthero p{
+    margin-bottom: 43px;
+}
+
+.biketab {
+    display: flex;
+}
+
+.tabtexthero h2, .tabtexthero p{
+    text-align: center;
+}
+
+.tabtexthero h2{
+    margin-bottom: 13px;
+}
+
+.tabtexthero p{
+    margin-bottom: 53px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.tile-teaser {
+    /* border-radius: 10px; */
+    background-size: cover;
+    color: #fff;
+}
+
+.tile-teaser .img-text {
+    width: 100%;
+    padding: 10px 20px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.tile-teaser .img-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 96px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
+    opacity: .5;
+}
+
+.h3-bold-heading-std{
+    color:#fff
+}
+
+.launchimgttl.d-flex{
+    display: flex;
+    width: 100%;
+/* gap: 17px; */
+justify-content: center;
+    align-items: center;
+}
+
+.newlaunches {
+    background-image: url('/Images/tyremarks.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.spacetopbottom{
+    padding-bottom: 120px;
+}
+
+.tileteaser{
+    width: 333px;
+}
+
+/* @media (min-width: 768px) {
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+} */
+
+.newlaunches h2{
+    margin-bottom: 43px;
+}
+
+.launchparap{
+    text-align: left;
+    color: #fff;
+}
+
+/* form */
+
+.inrspc{
+padding: 80px 0;
+}
+
+
+.herofield{
+    background: red;
+    margin-bottom: 120px;
+}
+
+/* container and form */
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.container form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 3 - 20px);
+  margin-bottom: 55px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
+  outline:none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+form .button input {
+    height: 100%;
+    width: fit-content;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 35px;
+    background: #000;
+    transition: all 0.3s ease;
+    padding: 13px 67px;
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #fff;
+  }
+
+
+  .contactform h2, .contactform p{
+    color:#fff;
+  }
+
+  .contactform h2{
+    margin-bottom: 13px;
+  }
+
+ .contactform p{
+    margin-bottom: 53px;
+  }
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .gender__details .category {
+    width: 100%;
+  }
+
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+/* be a hero */
+
+.beahero h2{
+    margin-bottom: 13px;
+
+}
+
+.beahero p {
+    margin-bottom: 53px;
+}
+
+/* about */
+.abouttabcon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouttxt, .aboutbikeimg{
+    width: 50%;
+}
+
+.abouttxt p{
+    text-align: left;
+}
+
+.abouttxt h3{
+    color: red;
+    font-size: 32px;
+}
+
+#about{
+    padding-top: 53px;
+}
+
+/* dealership */
+
+.dealership{
+    background: #d9d9d9;
+    margin-bottom: 120px;
+}
+
+
+.dealcon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylmile{
+    font-size: 52px;
+    font-weight: 900;
+    color: red;
+}
+
+.bordside{
+    border-right: 1px solid black;
+}
+
+.gridlayout{
+    display: flex;
+}
+
+.rollnumber{
+    display: flex;
+    flex-direction: column;
+}
+
+.rolltxt{
+    font-size: 18px;
+    font-weight: 400;
+    color: #303030;
+}
+
+.motoimg{
+    width: 90PX;
+}
+
+.ttltxt p{
+    text-align: left;
+}
+
+.dealbike{
+    width: 50%;
+    background: #fff;    
+    padding-left: 23px;
+    padding-right: 23px;
+    position: relative;
+}
+
+.dealnumber{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:768px){
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%; 
+        height: 100%;
+        top: 69px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer; 
+      }
+
+
+
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+        background-color: #ffbf27;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    h4 {
+        font-size: 11px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    span {
+        font-size: 6px;
+    }
+}
