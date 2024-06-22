@@ -71,7 +71,7 @@ a {
 }
 
 .swiper{
-  height: 650px;
+  height: 700px;
 }
 
 .swiper-slide img {
@@ -105,16 +105,51 @@ a {
     height: auto !important;
 }
 
+.headlogo {
+    WIDTH: 136px;
+}
+
 /* hero */
 
 .firsthero{
     position: relative;
+    background: #000;
 }
 
 .MS h4{
-    font-size: 19PX;
+    font-size: 13PX !important;
     font-weight: 300;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+margin-bottom: 0 !important;
+}
+
+.headfirst, .headlast {
+    display: flex;
+    gap: 16px;
+}
+
+.MS span{
+    font-size: 19PX;
+    font-weight: 600;
+    text-align: center;
+}
+header{
+    background-color: #000;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:32px 32px 0 32px;
 }
 
 .motoinfo{
@@ -128,13 +163,13 @@ a {
 }
 
  .ts{
-    margin: 39px 0 !important;
+    /* margin: 39px 0 !important; */
     padding: 0 39px !important;
     border-right: 1px solid #fff;
 }
 
 .pow{
-    margin: 39px 0 !important;
+    margin: 23px 0 !important;
     padding: 13px 39px !important;
     border-right: 1px solid #fff;
 }
@@ -152,6 +187,7 @@ a {
 .machine{
     margin: 39px;
     color: #fff;
+    height: 70px;
 }
 
 .motostyle{
