@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+<link rel="shortcut icon" href="/Images/logo.svg" type="image/x-icon">
     <title>My Hero</title>
 
 </head>
@@ -14,6 +15,16 @@
 <body>
 
     <header>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div id="overlay"></div>
+        <div class="headmiddle">
+            <div class="headlogomob"><img src="/Images/logo.svg" alt=""></div>
+        </div>
+
         <div class="tophead">
             <div class="headfirst">
                 <a href="">NEWLAUNCH</a>
@@ -23,6 +34,7 @@
             </div>
             <div class="headmiddle">
                 <div class="headlogo"><img src="/Images/logo.svg" alt=""></div>
+                <div class="headtext"><span>MODERN AUTO AGENCY</span></div>
             </div>
             <div class="headlast">
                 <a href="">ABOUT</a>
@@ -32,6 +44,7 @@
             </div>
         </div>
     </header>
+
     <!-- hero -->
 
     <div class="firsthero spacetopbottommar">
@@ -57,7 +70,7 @@
         </div>
         <div class="motoinfo">
             <div class="motostyle">
-                
+
                 <div class="machinename MS">
                     <h4>MAVRIK440<BR>ME X MACHINE</h4>
                 </div>
@@ -80,7 +93,7 @@
     <div class="helpyou ">
 
         <div class="helpleft">
-            <h2 class="helphdng">HOW CAN WE HEP YOU</h2>
+            <h2 class="helphdng">HOW CAN WE HELP YOU</h2>
             <div class="help-main-box quick-link-size6" id="quicklink">
 
                 <a class="help-box" aa-data-attr="track_cta" href="" data-toggle="modal" data-target="#requestCallBack"
@@ -158,60 +171,40 @@
         <h2>LATEST ARRIVAL</h2>
         <div class="launchimgttl d-flex page-width">
 
-            <div class="tileteaser image col-md-12 col-xl-5">
+            <div class="dual_image">
+                <div class="image col-md-12 col-xl-5">
+                    <div class="image-container">
+                        <img src="/Images/deskfront.png" alt="KARIZMA XMR" class="image">
+                        <img src="/Images/02-Karizma_onhoverone.png" alt="KARIZMA XMR" class="image hover-image">
+                        <a href="/en-in/good-life.html" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">KARIZMA XMR</h4>
+                        </a>
+                    </div>
 
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
+                    <div class="image-container">
+                        <img src="/Images/Xtreme125r-onhoverweb.jpg" alt="XTREME 125R" class="image">
+                        <img src="/Images/Xtreme125-thumb_Web.png" alt="XTREME 125R" class="image hover-image">
+                        <a href="/en-in/good-life.html" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">XTREME 125R</h4>
+                        </a>
+                    </div>
 
-                        </div>
-                    </a>
+                    <div class="image-container">
+                        <img src="/Images/Maverick_web_1.png" alt="MAVERICK" class="image">
+                        <img src="/Images/mavrick-feb-bike-web.png" alt="MAVERICK" class="image hover-image">
+                        <a href="/en-in/good-life.html" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">MAVERICK</h4>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="/Images/01-Harley_Davidson_thumbnail.png" alt="MAVERICK" class="image">
+                        <img src="/Images/02-Harley_Davidson_onhover.png" alt="MAVERICK" class="image hover-image">
+                        <a href="/en-in/good-life.html" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">HARLEY DAVIDSON</h4>
+                        </a>
+                    </div>
                 </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
             </div>
 
         </div>
@@ -284,72 +277,6 @@
         </div>
     </div>
 
-    <!-- NEW LAUNCHES -->
-    <div class="beahero  spacetopbottom">
-        <h2>BE A HERO WITH A HERO</h2>
-        <p>Hero Means Passion,Passion for Excellence,Passion For Great Rides And We Always Strive to give you the best.
-        </p>
-        <div class="launchimgttl d-flex page-width">
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="tileteaser image col-md-12 col-xl-5">
-
-                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
-                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
-                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
-                        <div class="d-flex justify-content-between launchpara">
-                            <p class="launchparap">Specialised Loyalty Program</p>
-
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
     <!-- form -->
 
     <div class="herofield ">
@@ -396,6 +323,74 @@
         </div>
     </div>
 
+    <!-- NEW LAUNCHES -->
+    <div class="beahero  spacetopbottom">
+        <h2>BE A HERO WITH A HERO</h2>
+        <p class="beaherop">Hero Means Passion,Passion for Excellence,Passion For Great Rides And We Always Strive to
+            give you the best.
+        </p>
+        <div class="launchimgttl d-flex page-width">
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/teaser-full-web.jpeg);height:406px;">
+                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Specialised Loyalty Program</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/teaser-web.jpeg);height:406px;">
+                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">ACCESSORIES</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Ride your style</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/teaser-web\ \(1\).jpeg);height:406px;">
+                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">GENUIEN PARTS</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Be Smart. Buy Genuine</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser "
+                    style="background-image: url(/Images/teaser-full-web\ \(1\).jpeg);height:406px;">
+                    <a href="/en-in/good-life.html" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">JOY RIDE PROGRAM</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Experience The Care</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- Dealership -->
 
     <div class="dealership">
@@ -405,9 +400,9 @@
                 <div class="ttltxt">
                     <h1>#1</h1>
                     <h3>TWO WHEELER<br> DELARSHIP IN<br> BIHAR</h3>
-                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora deserunt voluptate repellendus
-                        odit similique.</P><br>
-                    <p>ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <P>We are empowering millions around the global through our portfolio of innovation and sustainale
+                        product.</P><br>
+                    <p>powered by technology driven excellence, <br> we are shaping the future of mobility.</p>
                 </div>
                 <div class="motoimg">
                     <img src="/Images/pngwing.com.png" alt="red bike" loading="lazy">
@@ -532,6 +527,71 @@
         </div>
     </div>
 
+    <!-- Footer -->
+
+    <footer>
+        <div class="footbottom">
+            <div class="footmen ">
+                <div class="page-width foone">
+                    <span>HOME</span>
+                    <span>ABOUT</span>
+                    <span>CONTACT</span>
+                </div>
+            </div>
+            <div class="footmen  footmenborsty">
+                <div class="page-width fotwo">
+                    <div class="centerinfo"><span>Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India <br>
+                            Email:maabth@gmail.com</span></div>
+                    <div class="centerinfo"><span>Contact Person - Raj<br>9431466219 / 9771641111</span></div>
+                    <div class="centerinfo">
+                        <span>GSTN - 10AAEFM6429M1Z9</span>
+                        <div class="sociallink">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M11.8712 25.0361C20.2759 25.0361 24.8786 18.0685 24.8786 12.0287C24.8786 11.8286 24.8786 11.6285 24.8604 11.4466C25.7518 10.8099 26.534 9.99122 27.1344 9.08161C26.3157 9.44545 25.4243 9.68195 24.5147 9.80929C25.4607 9.24534 26.1884 8.35392 26.534 7.28058C25.6426 7.80816 24.6784 8.19019 23.6233 8.39031C22.7865 7.49889 21.604 6.95312 20.2941 6.95312C17.7654 6.95312 15.7279 9.00884 15.7279 11.5194C15.7279 11.8832 15.7643 12.2289 15.8371 12.5563C12.0349 12.3562 8.66935 10.537 6.41352 7.77177C6.01329 8.44488 5.79499 9.22714 5.79499 10.064C5.79499 11.6467 6.59544 13.0475 7.83251 13.8661C7.08663 13.848 6.37714 13.6296 5.7586 13.3022C5.7586 13.3204 5.7586 13.3386 5.7586 13.3568C5.7586 15.5762 7.34132 17.4136 9.43342 17.832C9.05138 17.9412 8.65115 17.9958 8.23274 17.9958C7.94166 17.9958 7.65059 17.9594 7.3777 17.9048C7.95985 19.724 9.65172 21.052 11.6529 21.0884C10.0701 22.3255 8.10539 23.0532 5.95872 23.0532C5.59487 23.0532 5.23103 23.035 4.86719 22.9804C6.88652 24.2902 9.28788 25.0361 11.8712 25.0361Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M20.3435 6.73557H23.2907V2.07838H19.6159H18.8518C18.8518 2.07838 16.0684 2.00561 14.3037 4.31602C14.3037 4.31602 13.1031 5.46212 13.0849 8.79129V12.266H8.71875V17.1961H13.0849V29.9306H18.1241V17.1961H22.472L23.0724 12.266H18.1241V8.79129C18.1423 8.40925 18.306 6.69919 20.3435 6.73557Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M20.6301 3.92969H11.3703C7.25885 3.92969 3.92969 7.25885 3.92969 11.3703V20.6301C3.92969 24.7415 7.25885 28.0707 11.3703 28.0707H20.6301C24.7415 28.0707 28.0707 24.7415 28.0707 20.6301V11.3703C28.0707 7.25885 24.7415 3.92969 20.6301 3.92969ZM25.7603 19.7387C25.7603 23.0496 23.0678 25.7421 19.7569 25.7421H12.2617C8.95072 25.7421 6.25828 23.0496 6.25828 19.7387V12.2617C6.25828 8.95072 8.95072 6.25828 12.2617 6.25828H19.7387C23.0496 6.25828 25.7421 8.95072 25.7421 12.2617V19.7387H25.7603Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.3204 9.67969C12.8093 9.67969 9.95312 12.5177 9.95312 16.0287C9.95312 19.5398 12.7911 22.3778 16.3204 22.3778C19.8315 22.3778 22.6694 19.5216 22.6694 16.0287C22.6876 12.5359 19.8315 9.67969 16.3204 9.67969ZM16.3204 19.8673C14.2101 19.8673 12.5 18.1572 12.5 16.0469C12.5 13.9367 14.2101 12.2266 16.3204 12.2266C18.4307 12.2266 20.1407 13.9367 20.1407 16.0469C20.1589 18.1572 18.4307 19.8673 16.3204 19.8673Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.871 9.58785C23.871 10.4793 23.1433 11.207 22.2519 11.207C21.3605 11.207 20.6328 10.4793 20.6328 9.58785C20.6328 8.69644 21.3605 7.96875 22.2519 7.96875C23.1433 7.96875 23.871 8.69644 23.871 9.58785Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footmen ">
+                <div class="page-width fothre">
+                    <div class="botfoot">
+                        <span>Privacy Policy</span><span>Desclaimer</span><span>Terms of Use</span><span>Rules &
+                            Regulations</span><span>Data Colletion Contract</span><span>Sitemap</span>
+                    </div>
+                    <div class="lastspan"><span class="righttxt">Cpoyright Modern Auto Agency 2024. All Right Reserved</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
 
         function openCity(evt, cityName) {
@@ -586,10 +646,24 @@
                 el: ".swiper-pagination",
                 clickable: true,
                 renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
                 },
             },
         });
+    </script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.querySelector(".tophead");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                document.getElementById("overlay").style.display = "none";
+            } else {
+                x.style.display = "flex";
+                document.getElementById("overlay").style.display = "block";
+            }
+        }
     </script>
 
 </body>

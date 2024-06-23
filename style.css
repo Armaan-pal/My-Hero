@@ -317,8 +317,126 @@ header a{
     opacity: .5;
 }
 
+       .image-container {
+            position: relative;
+            width: 300px;
+            /* Adjust the width as needed */
+            height: 200px;
+            /* Adjust the height as needed */
+        }
+
+        .image {
+            /* position: absolute; */
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s, transform 0.5s;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hover-image {
+            opacity: 0;
+            transform: translateX(0);
+        }
+
+        .dual_image .image-container:hover .hover-image {
+            opacity: 1;
+            transform: translateX(20px);
+        }
+
+       .dual_image  .image-container:hover .image:not(.hover-image) {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        .dual_image .img-text::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 96px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
+            opacity: .5;
+        }
+
+        .dual_image .image {
+            display: flex;
+            width: 100%;
+            /* height: 406px; */
+        }
+
+        .dual_image .image-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            /* Keep the height consistent */
+            overflow: hidden;
+            /* Hide overflow to ensure images don't go outside the container */
+        }
+
+        .dual_image .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .dual_image .image-container .hover-image {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        .dual_image .image-container:hover .hover-image {
+            opacity: 1;
+            transform: translateX(0);
+            /* Ensure hover image moves into view */
+        }
+
+        .dual_image .image-container:hover img:not(.hover-image) {
+            opacity: 0;
+            transform: translateX(-100%);
+            /* Move the original image completely out of view */
+        }
+
+        .dual_image .img-text {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .dual_image h4 {
+            margin: 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .dual_image{
+            width: 100%;
+        }
 .h3-bold-heading-std{
-    color:#fff
+    color:#fff;
+}
+
+.launchimgttl .h3-bold-heading-std{
+    line-height: 0.2px !important;
+}
+
+.dual_image .h3-bold-heading-std{
+    line-height: 1.2 !important;
 }
 
 .launchimgttl.d-flex{
@@ -478,8 +596,27 @@ form .button input:hover {
  .contactform p{
     margin-bottom: 53px;
   }
+  .headlogomob, .icon{
+    display: none;
+}
 
 @media only screen and (max-width: 584px) {
+    .tophead{
+        display: none;
+        z-index: 6;
+        position: relative;
+    }
+    .tophead, .headfirst, .headlast{
+        flex-direction: column;
+    }
+
+    .icon, .headlogomob{
+        display:block;
+    }
+
+    .headlogo{
+        display: none;
+    }
   .container {
     max-width: 100%;
   }
@@ -670,6 +807,9 @@ form .button input:hover {
     background-size: cover;
 }
 
+
+
+
 .helpyou{
     display: flex;
     position: relative;
@@ -713,8 +853,124 @@ form .button input:hover {
 } */
 
 
+/* footer */
+
+footer{
+    background: #303030;
+}
+
+footer span{
+    color: #fff;
+}
+
+.foone{
+    padding: 26px 0;
+  display: flex;
+  gap: 23px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.centerinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+  }
+
+.fothre{
+    padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fothre span{
+    padding-right: 9px;
+    padding-left: 9px;
+    border-right: 1px solid #fff;
+}
+.fotwo{
+    display: flex;
+    padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footmenborsty{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.righttxt , .botfoot span:last-child{
+    border-right: unset !important;
+}
+
+.sociallink{
+    display: flex;
+  gap: 9px;
+  justify-content: flex-end;
+}
+
+header a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.headtext span{
+    color: #fff;
+    display: none;
+}
+
+.headmiddle{
+    display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 
 @media(max-width:768px){
+
+    .dual_image .image {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+
+    .newlaunches{
+        background-image: none;
+    }
+
+    footer span{
+        font-size: 10px;
+    }
+
+    .foone, .fothre{
+        justify-content: center;
+    }
+
+    .fothre{
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .botfoot{
+        text-align: center;
+    }
+
+    .fotwo{
+        flex-direction: column;
+  gap: 14px;
+  text-align: center;
+    }
+
+    .sociallink {
+        justify-content: center;
+    }
+
+    .centerinfo{
+        gap: 23px;
+    }
 
     .rpos {
     position: unset;
@@ -735,10 +991,55 @@ form .button input:hover {
       }
 
     .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
-        background-color: #ffbf27;
-        color: #fff;
+        background-color: #000;
+        color: red;
     }
 
+    header{
+        padding: 6px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headmiddle {
+        margin-right: 80px;
+        margin-bottom: 16px;
+    }
+
+    .headlogomob {
+        width: 100%;
+    }
+
+
+.swiper{
+    height:230px;
+}
+
+.machine{
+    height: 30px;
+}
+
+.motostyle{
+    overflow: scroll;
+}
+
+.motoinfo{
+    display: none;
+}
+
+.swiper-pagination-bullet::after{
+    width: 23px;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    font-size: 19px !important;
+}
+.swiper-pagination-bullet {
+    font-size: 13px;
+    margin: 13px 0;
+}
     h1 {
         font-size: 23px;
     }
