@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/t-star-pro');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,42 @@ html {
 
 body {
     font-size: 100%;
-    font-family: sans-serif;
+    font-family: 'T-Star Pro', sans-serif;
+}
+
+#floatingwidget {
+    width: fit-content;
+    position: fixed;
+    top: 33%;
+    left: 0%;
+    z-index: 9;
+}
+
+.floatwid a svg {
+    width: 49px;
+    height: 49px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.floatwid{    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #000;
+    padding: 19px 23px;}
+
+.floatwid:hover {
+    background-color: #f7fafa;
+}
+
+.floatwid:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+.headphone{
+    width: 29px;
 }
 
 div,
@@ -66,22 +104,22 @@ a {
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-.swiper{
-  height: 700px;
+.swiper {
+    height: 700px;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     font-size: 28px;
     color: #FFF;
     width: 100% !important;
@@ -90,15 +128,15 @@ a {
     margin: 16px 0;
 }
 
-.swiper-pagination-bullet::after{
+.swiper-pagination-bullet::after {
     content: " ";
-    width: 29px;
+    width: inherit;
     height: 2px;
     display: block;
     background: #fff;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     color: #fff;
     font-size: 33PX;
     width: 100% !important;
@@ -111,36 +149,38 @@ a {
 
 /* hero */
 
-.firsthero{
+.firsthero {
     position: relative;
     background: #000;
 }
 
-.MS h4{
+.MS h4 {
     font-size: 13PX !important;
-    font-weight: 300;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 6px;
-margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-.headfirst, .headlast {
+.headfirst,
+.headlast {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 
-.MS span{
+.MS span {
     font-size: 19PX;
     font-weight: 600;
     text-align: center;
 }
-header{
+
+header {
     background-color: #000;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #fff;
 }
@@ -149,57 +189,68 @@ header a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:32px 32px 0 32px;
+    padding: 32px 32px 0 32px;
 }
 
-.motoinfo{
+.motoinfo {
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-        POSITION: absolute;
-        BOTTOM: 1px;
-        Z-INDEX: 3;
+    POSITION: absolute;
+    BOTTOM: 1px;
+    Z-INDEX: 3;
 }
 
- .ts{
+.ts {
     /* margin: 39px 0 !important; */
-    padding: 0 39px !important;
+    /* padding: 0 39px !important; */
     border-right: 1px solid #fff;
 }
 
-.pow{
-    margin: 23px 0 !important;
-    padding: 13px 39px !important;
+.pow {
+    margin: 19px 0 !important;
+    /* padding: 13px 39px !important; */
     border-right: 1px solid #fff;
 }
- .machinename{
+
+
+.tqn {
+    /* padding: 13px 39px !important;   */
+}
+
+.machinename {
     background-color: #303030;
     padding: 39px;
     color: #fff;
 
- }
-
-.machine_img{
-    width: 270px;
 }
 
-.machine{
-    margin: 39px;
+.machine_img {
+    width: 270px;
+    background: #737171;
+}
+
+.machine {
+    /* margin: 39px; */
     color: #fff;
     height: 70px;
+    padding: 0 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.motostyle{
+.motostyle {
     display: flex;
     align-items: center;
-    background: #000;
+    background: #4f4e4e;
     justify-content: flex-end;
     width: max-content;
     height: fit-content;
 }
 
-.spacetopbottommar{
+.spacetopbottommar {
     margin-bottom: 60px;
 }
 
@@ -212,7 +263,8 @@ header a{
     margin-left: auto;
 }
 
-.tab, .tabbtm {
+.tab,
+.tabbtm {
     overflow: hidden;
     border-bottom: 1px solid #ccc;
     gap: 23px;
@@ -221,7 +273,8 @@ header a{
     justify-content: center;
 }
 
-.tab button, .tabbtm button {
+.tab button,
+.tabbtm button {
     background-color: inherit;
     float: left;
     border: none;
@@ -246,18 +299,20 @@ header a{
     border-bottom: 2px solid red;
 }
 
-.tabcontent, .tabcontentbm {
+.tabcontent,
+.tabcontentbm {
     display: none;
     padding: 6px 12px;
     border-top: none;
 }
 
-.tabcontent, .tabcontentbtm {
+.tabcontent,
+.tabcontentbtm {
     animation: fadeEffect 1s;
     padding-top: 73px;
 }
 
-.tabtexthero p{
+.tabtexthero p {
     margin-bottom: 43px;
 }
 
@@ -265,15 +320,16 @@ header a{
     display: flex;
 }
 
-.tabtexthero h2, .tabtexthero p{
+.tabtexthero h2,
+.tabtexthero p {
     text-align: center;
 }
 
-.tabtexthero h2{
+.tabtexthero h2 {
     margin-bottom: 13px;
 }
 
-.tabtexthero p{
+.tabtexthero p {
     margin-bottom: 53px;
 }
 
@@ -317,185 +373,170 @@ header a{
     opacity: .5;
 }
 
-       .image-container {
-            position: relative;
-            width: 300px;
-            /* Adjust the width as needed */
-            height: 200px;
-            /* Adjust the height as needed */
-        }
-
-        .image {
-            /* position: absolute; */
-            width: 100%;
-            height: 100%;
-            transition: opacity 0.5s, transform 0.5s;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .hover-image {
-            opacity: 0;
-            transform: translateX(0);
-        }
-
-        .dual_image .image-container:hover .hover-image {
-            opacity: 1;
-            transform: translateX(20px);
-        }
-
-       .dual_image  .image-container:hover .image:not(.hover-image) {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        .dual_image .img-text::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 96px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
-            opacity: .5;
-        }
-
-        .dual_image .image {
-            display: flex;
-            width: 100%;
-            /* height: 406px; */
-        }
-
-        .dual_image .image-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            /* Keep the height consistent */
-            overflow: hidden;
-            /* Hide overflow to ensure images don't go outside the container */
-        }
-
-        .dual_image .image-container img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-
-        .dual_image .image-container .hover-image {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-
-        .dual_image .image-container:hover .hover-image {
-            opacity: 1;
-            transform: translateX(0);
-            /* Ensure hover image moves into view */
-        }
-
-        .dual_image .image-container:hover img:not(.hover-image) {
-            opacity: 0;
-            transform: translateX(-100%);
-            /* Move the original image completely out of view */
-        }
-
-        .dual_image .img-text {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            display: block;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 0;
-        }
-
-        .dual_image h4 {
-            margin: 0;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-        .dual_image{
-            width: 100%;
-        }
-.h3-bold-heading-std{
-    color:#fff;
+.image-container {
+    position: relative;
+    width: 300px;
+    /* Adjust the width as needed */
+    height: 200px;
+    /* Adjust the height as needed */
 }
 
-.launchimgttl .h3-bold-heading-std{
+.image {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s, transform 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-image {
+    opacity: 0;
+    transform: translateX(0);
+}
+
+.dual_image .image-container:hover .hover-image {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.dual_image .image-container:hover .image:not(.hover-image) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.dual_image .img-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 96px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
+    opacity: .5;
+}
+
+.dual_image .image {
+    display: flex;
+    width: 100%;
+    /* height: 406px; */
+}
+
+.dual_image .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Keep the height consistent */
+    overflow: hidden;
+    /* Hide overflow to ensure images don't go outside the container */
+}
+
+.dual_image .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.dual_image .image-container .hover-image {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.dual_image .image-container:hover .hover-image {
+    opacity: 1;
+    transform: translateX(0);
+    /* Ensure hover image moves into view */
+}
+
+.dual_image .image-container:hover img:not(.hover-image) {
+    opacity: 0;
+    transform: translateX(-100%);
+    /* Move the original image completely out of view */
+}
+
+.dual_image .img-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dual_image h4 {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dual_image {
+    width: 100%;
+}
+
+.h3-bold-heading-std {
+    color: #fff;
+}
+
+.launchimgttl .h3-bold-heading-std {
     line-height: 0.2px !important;
 }
 
-.dual_image .h3-bold-heading-std{
+.dual_image .h3-bold-heading-std {
     line-height: 1.2 !important;
 }
 
-.launchimgttl.d-flex{
+.launchimgttl.d-flex {
     display: flex;
     width: 100%;
-/* gap: 17px; */
-justify-content: center;
+    /* gap: 17px; */
+    justify-content: center;
     align-items: center;
 }
 
 .newlaunches {
     background-image: url('/Images/tyremarks.png');
     background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 120px;
 }
 
-.spacetopbottom{
+.spacetopbottom {
     padding-bottom: 120px;
 }
 
-.tileteaser{
+.tileteaser {
     width: 333px;
 }
 
-/* @media (min-width: 768px) {
-    .col-md-12 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-xl-5 {
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
-    }
-} */
-
-.newlaunches h2{
+.newlaunches h2 {
     margin-bottom: 43px;
 }
 
-.launchparap{
+.launchparap {
     text-align: left;
     color: #fff;
 }
 
 /* form */
 
-.inrspc{
-padding: 80px 0;
+.inrspc {
+    padding: 80px 0;
 }
 
 
-.herofield{
+.herofield {
     background: red;
     margin-bottom: 120px;
 }
@@ -503,58 +544,60 @@ padding: 80px 0;
 /* container and form */
 
 .container .title {
-  font-size: 25px;
-  font-weight: 500;
-  position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
 }
 
 .container .title::before {
-  content: "";
-  position: absolute;
-  height: 3.5px;
-  width: 30px;
-  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
-  left: 0;
-  bottom: 0;
+    content: "";
+    position: absolute;
+    height: 3.5px;
+    width: 30px;
+    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    left: 0;
+    bottom: 0;
 }
 
 .container form .user__details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
 }
+
 /* inside the form user details */
 form .user__details .input__box {
-  width: calc(100% / 3 - 20px);
-  margin-bottom: 55px;
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 55px;
 }
 
 .user__details .input__box .details {
-  font-weight: 500;
-  margin-bottom: 5px;
-  display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
 }
+
 .user__details .input__box input {
-  height: 45px;
-  width: 100%;
-  outline:none;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  transition: all 0.3s ease;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
 }
 
 form input[type="radio"] {
-  display: none;
+    display: none;
 }
 
 /* submit button */
 form .button {
-  height: 45px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+    height: 45px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 form .button input {
@@ -572,72 +615,88 @@ form .button input {
 }
 
 form .button input:hover {
-  background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
 }
 
 ::placeholder {
     color: #fff;
-    opacity: 1; /* Firefox */
-  }
-  
-  ::-ms-input-placeholder { /* Edge 12 -18 */
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
     color: #fff;
-  }
+}
 
 
-  .contactform h2, .contactform p{
-    color:#fff;
-  }
+.contactform h2,
+.contactform p {
+    color: #fff;
+}
 
-  .contactform h2{
+.contactform h2 {
     margin-bottom: 13px;
-  }
+}
 
- .contactform p{
+.contactform p {
     margin-bottom: 53px;
-  }
-  .headlogomob, .icon{
+}
+
+.headlogomob,
+.icon {
     display: none;
 }
 
 @media only screen and (max-width: 584px) {
-    .tophead{
+    .tophead {
         display: none;
         z-index: 6;
-        position: relative;
+       
+        position: absolute;
+        top: 6%;
+        background: #000;
+        width: 100%;
+        padding: 32px;
     }
-    .tophead, .headfirst, .headlast{
+
+    .tophead,
+    .headfirst,
+    .headlast {
         flex-direction: column;
+        width: 100%;
     }
 
-    .icon, .headlogomob{
-        display:block;
+    .icon,
+    .headlogomob {
+        display: block;
     }
 
-    .headlogo{
+    .headlogo {
         display: none;
     }
-  .container {
-    max-width: 100%;
-  }
 
-  form .user__details .input__box {
-    margin-bottom: 15px;
-    width: 100%;
-  }
+    .container {
+        max-width: 100%;
+    }
 
-  form .gender__details .category {
-    width: 100%;
-  }
+    form .user__details .input__box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
 
-  .user__details::-webkit-scrollbar {
-    width: 0;
-  }
+    form .gender__details .category {
+        width: 100%;
+    }
+
+    .user__details::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 /* be a hero */
 
-.beahero h2{
+.beahero h2 {
     margin-bottom: 13px;
 
 }
@@ -647,68 +706,70 @@ form .button input:hover {
 }
 
 /* about */
-.abouttabcon{
+.abouttabcon {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.abouttxt, .aboutbikeimg{
+.abouttxt,
+.aboutbikeimg {
     width: 50%;
 }
 
-.abouttxt p{
+.abouttxt p {
     text-align: left;
 }
 
-.abouttxt h3{
+.abouttxt h3 {
     color: red;
     font-size: 32px;
 }
 
-#about{
+#about {
     padding-top: 53px;
 }
 
 /* dealership */
 
-.dealership{
+.dealership {
     background: #d9d9d9;
     margin-bottom: 120px;
 }
 
 
-.dealcon{
+.dealcon {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.stylmile{
+.stylmile {
     font-size: 52px;
     font-weight: 900;
     color: red;
 }
 
-.bordside{
+.bordside {
     border-right: 1px solid black;
 }
 
-.gridlayout{
+.gridlayout {
     display: flex;
     gap: 23px;
     padding-left: 89px;
 }
 
-.gridtop, .gridbtm {
+.gridtop,
+.gridbtm {
     display: flex;
     flex-direction: column;
     gap: 93px;
 }
 
-.rollnumber{
+.rollnumber {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -716,71 +777,72 @@ form .button input:hover {
     padding-right: 23px;
 }
 
-.rolltxt{
+.rolltxt {
     font-size: 18px;
     font-weight: 400;
     color: #303030;
     text-align: center;
 }
 
-.motoimg{
+.motoimg {
     width: 286px;
     position: absolute;
     top: 46px;
     right: -142px;
 }
 
-.ttltxt p{
+.ttltxt p {
     text-align: left;
 }
 
-.dealbike{
+.dealbike {
     width: 50%;
-    background: #fff;    
+    background: #fff;
     padding-left: 36px;
     padding-right: 136px;
     position: relative;
 }
 
-.dealnumber{
+.dealnumber {
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-.ttltxt h3{
+.ttltxt h3 {
     font-size: 48px;
     margin-bottom: 36px;
     margin-top: 16px;
 }
 
-.ttltxt h1{
-    color:red;
+.ttltxt h1 {
+    color: red;
     font-size: 93px;
 }
 
 /* how can we help you */
 
-.helpleft, .helpright{
+.helpleft,
+.helpright {
     width: 50%;
 }
 
-.help-main-box{
+.help-main-box {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.help-box{
+.help-box {
     width: auto;
     margin-bottom: 58px;
     margin-right: 0;
     /* width: 30%; */
 }
 
-.help-icon-box{
+.help-icon-box {
     width: max-content;
-    height: 113px;
+    height: auto;
     background: #fff;
     border-radius: 4px;
 
@@ -793,14 +855,14 @@ form .button input:hover {
     margin: auto;
 }
 
-.help-box p{
+.help-box p {
     margin-top: 18px;
     text-align: center;
     font-size: 19px !important;
     line-height: 1.2 !important;
 }
 
-.helpright{
+.helpright {
     background-image: url('/Images/bike-bg.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -810,16 +872,18 @@ form .button input:hover {
 
 
 
-.helpyou{
+.helpyou {
     display: flex;
     position: relative;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
 }
 
-.helphdng{
-    margin-bottom: 33px;
+.helphdng {
+    margin: 76px 0;
 }
 
-.rpos{
+.rpos {
     position: absolute;
     right: 93px;
     bottom: 13px;
@@ -828,108 +892,120 @@ form .button input:hover {
 }
 
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     color: #000 !important;
-    /* background-color: #000;
-    background: #000; */
-  }
-
-  /* .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    color: #000;
-    background-color: #000;
-    background: #000;
-  }
-
-  .swiper-button-next:after, .swiper-button-prev:after{
-    color: #000;
-    background-color: #000;
-    background: #000;   
-  }
-  
-  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    color: #000;
-    background-color: #000;
-    background: #000;  
-} */
-
+}
 
 /* footer */
 
-footer{
+footer {
     background: #303030;
 }
 
-footer span{
+footer span {
     color: #fff;
 }
 
-.foone{
-    padding: 26px 0;
-  display: flex;
-  gap: 23px;
-  justify-content: flex-start;
-  align-items: center;
+.foone {
+    padding: 33px 0;
+    display: flex;
+    gap: 23px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .centerinfo {
     display: flex;
     flex-direction: column;
     gap: 66px;
-  }
-
-.fothre{
-    padding: 26px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.fothre span{
+.fothre {
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fothre span {
     padding-right: 9px;
     padding-left: 9px;
     border-right: 1px solid #fff;
 }
-.fotwo{
+
+.fotwo {
     display: flex;
     padding: 26px 0;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.footmenborsty{
+.footmenborsty {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
 
-.righttxt , .botfoot span:last-child{
+.righttxt,
+.botfoot span:last-child {
     border-right: unset !important;
 }
 
-.sociallink{
+.sociallink {
     display: flex;
-  gap: 9px;
-  justify-content: flex-end;
+    gap: 9px;
+    justify-content: flex-end;
 }
 
-header a:hover{
+header a:hover {
     text-decoration: underline;
     text-decoration-color: red;
 }
 
-.headtext span{
+.headtext span {
     color: #fff;
     display: none;
 }
 
-.headmiddle{
+.headmiddle {
     display: flex;
-  justify-content: center;
-  align-content: center;
+    justify-content: center;
+    align-content: center;
 }
 
 
-@media(max-width:768px){
+@media(max-width:768px) {
+
+    .icon{
+        text-align: unset;
+        width: auto;
+        border-bottom: unset;
+    }
+
+    .floatwid {
+        gap: 6px;
+    padding: 6px 9px;
+    }
+
+    header a{
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+        padding: 19px;
+    }
+
+    .floatwid svg{
+        width: 19px;
+    }
+
+    .helphdng {
+        margin: 30px 0;
+    }
+
+    .headphone{
+        display: none;
+    }
 
     .dual_image .image {
         flex-direction: column;
@@ -937,114 +1013,129 @@ header a:hover{
     }
 
 
-    .newlaunches{
+    .newlaunches {
         background-image: none;
+        padding-top: 60px;
     }
 
-    footer span{
+    footer span {
         font-size: 10px;
     }
 
-    .foone, .fothre{
+    .foone,
+    .fothre {
         justify-content: center;
     }
 
-    .fothre{
+    .fothre {
         flex-direction: column;
         gap: 9px;
     }
 
-    .botfoot{
+    .botfoot {
         text-align: center;
     }
 
-    .fotwo{
+    .fotwo {
         flex-direction: column;
-  gap: 14px;
-  text-align: center;
+        gap: 14px;
+        text-align: center;
     }
 
     .sociallink {
         justify-content: center;
     }
 
-    .centerinfo{
+    .centerinfo {
         gap: 23px;
     }
 
     .rpos {
-    position: unset;
+        position: unset;
     }
 
     #overlay {
         position: fixed;
         display: none;
-        width: 100%; 
+        width: 100%;
         height: 100%;
         top: 69px;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 2;
-        cursor: pointer; 
-      }
+        cursor: pointer;
+    }
 
-    .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+    .fa-navicon:before,
+    .fa-reorder:before,
+    .fa-bars:before {
         background-color: #000;
         color: red;
     }
 
-    header{
+    header {
         padding: 6px 16px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 
+    .scriptlay{
+        width: 100%;
+    display: flex;
+    }
+
     .headmiddle {
-        margin-right: 80px;
+        width: 100%;
+        align-items: center;
+        padding-top: 19px;
+        margin-right: 0px;
         margin-bottom: 16px;
     }
 
     .headlogomob {
-        width: 100%;
+        width: 33%;
     }
 
 
-.swiper{
-    height:230px;
-}
+    .swiper {
+        height: 230px;
+    }
 
-.machine{
-    height: 30px;
-}
+    .machine {
+        height: 30px;
+    }
 
-.motostyle{
-    overflow: scroll;
-}
+    .motostyle {
+        overflow: scroll;
+    }
 
-.motoinfo{
-    display: none;
-}
+    .motoinfo {
+        display: none;
+    }
 
-.swiper-pagination-bullet::after{
-    width: 23px;
-}
+    .swiper-pagination-bullet::after {
+        width: 23px;
+    }
 
-.swiper-pagination-bullet-active {
-    color: #fff;
-    font-size: 19px !important;
-}
-.swiper-pagination-bullet {
-    font-size: 13px;
-    margin: 13px 0;
-}
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        font-size: 19px !important;
+    }
+
+    .swiper-pagination-bullet {
+        font-size: 13px;
+        margin: 13px 0;
+    }
+
     h1 {
         font-size: 23px;
     }
 
-    h2{
+    h2 {
         font-size: 28px;
     }
 
@@ -1057,7 +1148,7 @@ header a:hover{
         font-size: 11px;
     }
 
-    p{
+    p {
         font-size: 16px !important;
     }
 
@@ -1065,44 +1156,46 @@ header a:hover{
         font-size: 6px;
     }
 
-    .spacetopbottom{
+    .spacetopbottom {
         padding-bottom: 60px;
     }
 
     .help-main-box {
         display: block;
         display: flex;
-        gap: 14px;
+        gap: 23px;
         overflow: scroll;
         padding-left: 15px;
     }
 
-    .helpyou{
+    .helpyou {
         display: block;
     }
 
-    .helpleft, .helpright{
+    .helpleft,
+    .helpright {
         width: 100%;
     }
 
-    .launchimgttl.d-flex{
+    .launchimgttl.d-flex {
         flex-direction: column;
         gap: 19px;
     }
 
-    .abouttabcon{
+    .abouttabcon {
         flex-direction: column;
     }
 
-    .abouttxt, .aboutbikeimg{
+    .abouttxt,
+    .aboutbikeimg {
         width: 100%;
     }
 
-    .dealcon{
+    .dealcon {
         flex-direction: column;
     }
 
-    .dealership{
+    .dealership {
         background: unset;
         margin-bottom: 0;
         padding-bottom: 60px;
@@ -1116,39 +1209,46 @@ header a:hover{
 
     /* dealership */
 
-    .dealbike,.dealnumber {
+    .dealbike,
+    .dealnumber {
         width: 100%;
         padding-top: 23px;
         justify-content: flex-start;
     }
 
-    .dealbike{
+    .dealbike {
         padding: unset;
     }
 
-    .ttltxt h3{
+    .ttltxt h3 {
         font-size: 28px;
         margin-bottom: 26px;
     }
 
-    .stylmile{
+    .stylmile {
         font-size: 22px;
     }
 
-    .rolltxt{
+    .rolltxt {
         font-size: 8px;
     }
 
-    .gridlayout{
+    .gridlayout {
         padding: unset;
         gap: 16px;
     }
-    .rollnumber{
+
+    .rollnumber {
         padding-right: 16px;
     }
 
-    .gridtop, .gridbtm {
-    gap: 23px;
+    .gridbtm {
+        gap: 16px;
+    }
+
+    .gridtop,
+    .gridbtm {
+        gap: 23px;
     }
 
     .ttltxt h1 {
@@ -1158,57 +1258,61 @@ header a:hover{
 
     /* explore */
 
-    .tabtexthero p{
+    .tabtexthero p {
         font-size: 16px !important;
     }
 
-    .tab button, .tabbtm button{
+    .tab button,
+    .tabbtm button {
         font-size: 18px;
     }
 
-    .tabcontent, .tabcontentbtm {
+    .tabcontent,
+    .tabcontentbtm {
         padding-top: 39px;
     }
 
-    .biketab{
+    .biketab {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tileteaser {
         width: 100%;
     }
 
-    .help-box p{
+    .help-box p {
         font-size: 13px !important;
     }
 
-    .help-icon-box{
+    .help-icon-box {
         height: auto;
         box-shadow: 0 3px 3px #dddcdc;
     }
 
     .help-main-box::-webkit-scrollbar {
         display: none;
-      }
-      
-      .help-main-box {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
+    }
 
-    .helpyou h2{
+    .help-main-box {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .helpyou h2 {
         MARGIN-BOTTOM: 19px;
     }
 
-    .help-box{
+    .help-box {
         margin-bottom: 28px;
     }
 
     .motoimg {
         width: 76px;
         position: absolute;
-        top: 346px;
+        top: 431px;
         right: -3px;
     }
 
@@ -1217,7 +1321,8 @@ header a:hover{
     }
 
     /* tab */
-    .tab, .tabbtm{
+    .tab,
+    .tabbtm {
         overflow: scroll;
     }
 }
