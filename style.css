@@ -1,6 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/t-star-pro');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +9,42 @@ html {
 
 body {
     font-size: 100%;
-    font-family: 'T-Star Pro', sans-serif;
+    font-family: 'tstar-heavy', sans-serif;
 }
+
+@font-face {
+    font-family: 'tstar-heavy';
+    src: url('/font/TStarProHeavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'tstar-medium';
+    src: url('/font/TStarProMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* @keyframes textclip {
+0% {
+    background-position: 200% center;
+}
+
+100% {
+    background-position: 0 center;
+}
+}
+
+header a:first-child{
+    background: linear-gradient(to right, red 5%, black 50%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+} */
 
 #floatingwidget {
     width: fit-content;
@@ -70,6 +101,8 @@ h1 {
 }
 
 h2 {
+    font-family: 'tstar-heavy';
+    FONT-STYLE: italic;
     font-size: 48px;
     font-weight: 900;
     text-align: center;
@@ -77,6 +110,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'tstar-heavy';
     font-size: 1.765vw;
     margin-bottom: 20px;
 }
@@ -88,6 +122,7 @@ h4 {
 }
 
 p {
+    font-family: 'tstar-medium';
     font-size: 18px !important;
     line-height: 24px !important;
     color: #303030;
@@ -100,6 +135,7 @@ span {
 }
 
 a {
+    font-family: 'tstar-medium';
     text-decoration: none;
 }
 
@@ -108,7 +144,11 @@ a {
     height: 100%;
 }
 
-.swiper {
+/* .swiper-button-next:after, .swiper-button-prev:after{
+    color: #fff;
+} */
+
+.firsthero .swiper {
     height: 700px;
 }
 
@@ -117,6 +157,10 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.helpright .swiper-slide img {
+    object-fit: contain;
 }
 
 .swiper-pagination-bullet {
@@ -189,7 +233,7 @@ header a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 32px 0 32px;
+    padding: 32px 32px 32px 32px;
 }
 
 .motoinfo {
@@ -277,6 +321,7 @@ header a {
 .tabbtm button {
     background-color: inherit;
     float: left;
+    font-family: 'tstar-medium';
     border: none;
     text-transform: uppercase;
     color: #303030;
@@ -296,6 +341,7 @@ header a {
 
 .tabbtm button.activebtm {
     color: red;
+    font-weight: 600;
     border-bottom: 2px solid red;
 }
 
@@ -562,7 +608,9 @@ header a {
 .container form .user__details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     margin: 20px 0 12px 0;
 }
 
@@ -615,7 +663,26 @@ form .button input {
 }
 
 form .button input:hover {
-    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+    background: black;
+    color: #fff;
+}
+
+.input__box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.input__box select:invalid {
+    color: gray; /* Show placeholder text in gray color */
+}
+
+.input__box select option[value=""][disabled] {
+    display: none; /* Hide the empty option in the dropdown */
 }
 
 ::placeholder {
@@ -747,7 +814,8 @@ form .button input:hover {
 }
 
 .stylmile {
-    font-size: 52px;
+    font-family: 'tstar-heavy';
+    font-size: 49px;
     font-weight: 900;
     color: red;
 }
@@ -812,6 +880,7 @@ form .button input:hover {
 .ttltxt h3 {
     font-size: 48px;
     margin-bottom: 36px;
+    font-style: italic;
     margin-top: 16px;
 }
 
@@ -822,22 +891,32 @@ form .button input:hover {
 
 /* how can we help you */
 
-.helpleft,
+
 .helpright {
-    width: 50%;
+    width: 40%;
+}
+
+.helpleft{
+    width: 60%;
 }
 
 .help-main-box {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+display: flex;
+flex-wrap: wrap;
 }
 
 .help-box {
-    width: auto;
+    /* width: auto; */
     margin-bottom: 58px;
     margin-right: 0;
-    /* width: 30%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.pta{
+    width: 30%;
 }
 
 .help-icon-box {
@@ -845,20 +924,19 @@ form .button input:hover {
     height: auto;
     background: #fff;
     border-radius: 4px;
-
     border: 1px solid #dddcdc;
     box-shadow: 0 8px 24px #dddcdc;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: auto;
 }
 
 .help-box p {
     margin-top: 18px;
     text-align: center;
-    font-size: 19px !important;
+    width: fit-content;
+    font-size: 13px !important;
     line-height: 1.2 !important;
 }
 
@@ -866,7 +944,7 @@ form .button input:hover {
     background-image: url('/Images/bike-bg.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 
@@ -875,18 +953,17 @@ form .button input:hover {
 .helpyou {
     display: flex;
     position: relative;
-    padding-right: 0 !important;
-    margin-right: 0 !important;
 }
 
 .helphdng {
+    text-align: left;
     margin: 76px 0;
 }
 
 .rpos {
     position: absolute;
     right: 93px;
-    bottom: 13px;
+    bottom: 76px;
     color: #fff;
     font-size: 36px;
 }
@@ -901,6 +978,15 @@ form .button input:hover {
 
 footer {
     background: #303030;
+}
+
+.address{
+    gap: 23px !important;
+}
+
+.address a{
+    text-decoration: none;
+    color: #fff;
 }
 
 footer span {
@@ -961,19 +1047,79 @@ footer span {
 header a:hover {
     text-decoration: underline;
     text-decoration-color: red;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .headtext span {
+    font-family: 'tstar-heavy';
+
     color: #fff;
-    display: none;
+    /* display: none; */
+    border-left: 5px solid red;
+    padding: 12px;
 }
 
 .headmiddle {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 23px;
 }
 
+#executive .herobikeimg, #performance .herobikeimg{
+    width: 213px;
+}
+
+#scooters .herobikeimg{
+    width: 320px;
+}
+.herobikeimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.herobikeimg p{
+    display: none;
+    margin-bottom: 0;
+}
+
+.herobikeimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.herobikeimg p {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 16px; /* Adjust as necessary */
+}
+
+.herobikeimg:hover p {
+    display: block;
+}
+
+@media(max-width:1400px) {
+    .helpyou{
+        max-width: 1286px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
 
 @media(max-width:768px) {
 
@@ -1136,6 +1282,7 @@ header a:hover {
     }
 
     h2 {
+      
         font-size: 28px;
     }
 
