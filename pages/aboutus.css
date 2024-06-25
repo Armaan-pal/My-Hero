@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'transducer';
+    src: url('/font/TransducerTest-CondensedRegular-BF645c3dd82a42c.otf') format('opentype');
+}
+
+.our-values-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.our-values-card h5 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.our-values-card p {
+    color: #000;
+    text-align: center;
+    font-family: 'tstar-medium';
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.values-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.section-title h5 {
+    color: red;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140%;
+}
+
+.our-values-wrapper {
+    width: 100%;
+    margin-top: 72px;
+    padding: 56px 92px 62px;
+    text-align: center;
+    background: #f3f3f3;
+    backdrop-filter: blur(22px);
+    clip-path: polygon(70px 0, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0 70px);
+}
+
+/* be the future */
+
+.aem-Grid.aem-Grid--default--12>.aem-GridColumn.aem-GridColumn--default--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+}
+
+.future-mobility-outer-wrapper {
+    margin: 96px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vision-wrapper {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+}
+
+.company-future-mobility .vision-heading {
+    margin-top: 149px;
+    width: 315px;
+}
+
+
+.company-future-mobility .vision-heading {
+    margin-top: 149px;
+    width: 315px;
+}
+
+.vision-heading h4 {
+    color: #000;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.company-future-mobility .mission-card h6 {
+    padding-top: 0;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.mission-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.company-future-mobility .mission-card-container .mission-card {
+    flex: 1;
+}
+
+.mission-card p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/* desclaimer */
+
+.block--company-two-wheeler-mobility .backgroundImage {
+    background: linear-gradient(107deg, #FFF 22.89%, rgba(255, 255, 255, 0.00) 71.45%), url(/Images/two-wheeler-desktop.png), lightgray -0.087px -516.92px / 138.455% 185.896% no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block--company-two-wheeler-mobility .backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.block--company-two-wheeler-mobility .source {
+    position: relative;
+    padding: 16px 120px 96px;
+}
+
+.block--company-two-wheeler-mobility .twoWheelerMobilityText {
+    display: flex;
+    column-gap: 51px;
+    margin-bottom: 86px;
+    align-items: flex-end;
+}
+
+.block--company-two-wheeler-mobility .black-banner {
+    display: flex;
+}
+
+.block--company-two-wheeler-mobility .twoWheelerMobilityContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.block--company-two-wheeler-mobility .rank p {
+    color: red;
+    font-size: 220px !important;
+    font-style: normal !important;
+    line-height: 100% !important;
+    letter-spacing: -4.4px !important;
+}
+
+.block--company-two-wheeler-mobility .rank p span {
+    font-size: 190px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.block--company-two-wheeler-mobility .twoWheelerMobilityContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.block--company-two-wheeler-mobility .twoWheelerMobilityHeading {
+    font-family: 'transducer';
+    color: #000;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    width: 816px;
+}
+
+.block--company-two-wheeler-mobility .banner2 {
+    width: 100%;
+    display: flex;
+    row-gap: 45px;
+    align-content: center;
+    justify-content: space-between;
+    background: linear-gradient(106deg, #000 0, #3c3c3c 147.13%);
+    backdrop-filter: blur(22px);
+    color: #fff;
+    padding: 48px 56px 24px;
+    clip-path: polygon(48px 0, 100% 0, 100% calc(100% - 48px), calc(100% - 48px) 100%, 0 100%, 0 48px);
+}
+
+.block--company-two-wheeler-mobility .banner2 .bannerContent {
+    width: 224px;
+}
+
+.block--company-two-wheeler-mobility .banner2 h1 {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.block--company-two-wheeler-mobility .banner2 h1 p:first-child {
+    font-weight: 500;
+    font-size: 44px !important;
+    line-height: 100%;
+    letter-spacing: -0.88px;
+}
+
+.block--company-two-wheeler-mobility .banner2 h1 p {
+    color: #f3f3f3;
+    font-size: 39px !important;
+    font-weight: 500;
+    line-height: 120%;
+    font-style: normal;
+}
+.block--company-two-wheeler-mobility .banner2 p {
+    color: #f3f3f3;
+    text-align: center;
+    align-items: center;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.block--company-two-wheeler-mobility .banner2 h1 p:first-child {
+    font-family: var(--font-hyperspace-race-variable);
+    font-variation-settings: 'wght' 700, 'wdth' 150, 'ital' 0;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.88px;
+}
+
+.block--company-two-wheeler-mobility .loremText p {
+    font-family: 'tstar-medium';
+    font-size: 16px;
+    text-align: left;
+    font-style: normal;
+    line-height: 140%;
+    margin-top: 16px;
+}
+
+.block--company-two-wheeler-mobility .twoWheelerMobilityPara {
+    color: #000;
+    font-family: 'tstar-medium';
+    font-size: 16px !important;
+    font-style: normal;
+    line-height: 140%;
+    width: 632px;
+}
+
+/* be the future */
+
+.section-title h5 {
+    color: red;
+    font-family: 'tstar-heavy';
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140%;
+}
+
+.mission-card p {
+    font-family: 'tstar-medium';
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.mission-card h6 {
+    padding-top: 0;
+    font-family: 'tstar-heavy';
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.vision-heading h4 {
+    font-family: 'tstar-heavy';
+    font-size: 64px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.vision-heading h4 span {
+    color: red;
+    font-size: 64px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.vision-heading {
+    margin-top: 149px;
+    width: 315px;
+}
+
+.vision-wrapper {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+}
+
+.vision-wrapper {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+}
+
+.mission-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.vision-heading h4 span {
+    color: red;
+    font-size: 64px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.hero-img-right .hero-img-bottom {
+    height: 160px;
+    width: 110px;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    overflow: hidden;
+    margin-top: 22px;
+}
+
+.hero-img-right .hero-img-top {
+    height: 230px;
+    width: 110px;
+    clip-path: polygon(0 0, 100% 32%, 100% 68%, 0 100%);
+    overflow: hidden;
+}
+
+.hero-img-left {
+    margin-top: 38px;
+    height: 487px;
+    width: 137px;
+    clip-path: polygon(0 0, 100% 22%, 100% 100%, 0 78%);
+    overflow: hidden;
+}
+
+.hero-img-container .hero-img-inner {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 22px;
+}
+
+@media screen and (max-width: 1050px) {
+    .block--company-two-wheeler-mobility .twoWheelerMobilityHeading {
+        font-size: 40px;
+        width: 580px;
+    }
+
+    .block--company-two-wheeler-mobility .rank p {
+        font-size: 124px;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityText {
+        column-gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .block--company-two-wheeler-mobility .source {
+        padding: 16px 30px 60px;
+    }
+
+    .block--company-two-wheeler-mobility .rank p {
+        font-size: 124px;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityPara {
+        width: 530px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .block--company-two-wheeler-mobility .twoWheelerMobilityHeading {
+        font-size: 48px;
+        width: 698px;
+    }
+    .block--company-two-wheeler-mobility .rank p {
+        font-size: 180px;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityText {
+        column-gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .block--company-two-wheeler-mobility .source {
+        padding: 16px 100px 80px;
+    }
+
+    .block--company-two-wheeler-mobility .rank p {
+        font-size: 180px;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityPara {
+        width: 600px;
+    }
+}
+
+@media(max-width:768px){
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityPara {
+        width: 100%;
+    }
+
+    .block--company-two-wheeler-mobility .rank p {
+        font-size: 66px;
+    }
+
+    .block--company-two-wheeler-mobility .source {
+        padding: 12px 0 40px;
+    }
+
+    .backgroundImage {
+        background: linear-gradient(185deg, #FFF -59.31%, rgba(255, 255, 255, 0.20) 36.59%, rgba(255, 255, 255, 0.80) 72.24%, rgba(255, 255, 255, 0.00) 105.49%), url(/Images/two-wheeler-mobile.jpg), lightgray -0.039px -230.003px / 138.455% 185.896% no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .block--company-two-wheeler-mobility .black-banner {
+        margin: 0 48px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block--company-two-wheeler-mobility .banner2 {
+        flex-direction: column;
+        width: min-content;
+        padding: 40px 24px;
+        background: linear-gradient(113deg, #000 -8.43%, #3c3c3c 139.88%);
+        clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
+    }
+
+    .block--company-two-wheeler-mobility .banner2 .bannerContent {
+        width: 232px;
+    }
+
+    .block--company-two-wheeler-mobility .banner2 h1 {
+        gap: 8px;
+    }
+
+    .block--company-two-wheeler-mobility .banner2 h1 p:first-child {
+        font-size: 28px;
+        letter-spacing: -0.56px;
+    }
+
+    .block--company-two-wheeler-mobility .banner2 h1 img {
+        margin: 7px 0;
+    }
+
+    .block--company-two-wheeler-mobility .banner2 p {
+        font-size: 16px;
+    }
+
+    .block--company-two-wheeler-mobility .loremText p {
+        margin: 16px 48px 0 48px;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityText {
+        flex-direction: column;
+        margin: 0 16px 24px;
+        align-items: normal;
+    }
+
+    .block--company-two-wheeler-mobility .twoWheelerMobilityHeading {
+        width: 100%;
+        font-size: 42px;
+    }
+    .vision-wrapper{
+        flex-direction: column;
+        gap: 56px;
+
+    }
+
+ .vision-container {
+        margin: 0 16px;
+    }
+
+ .vision-heading {
+        margin-top: 16px;
+        width: 253px;
+    }
+
+ .vision-heading h4, .vision-heading h4 span {
+        font-size: 40px !important;
+        line-height: normal !important;
+    }
+
+    .block--company-two-wheeler-mobility .rank p ,  .block--company-two-wheeler-mobility .rank p span{
+        font-size: 66px !important;
+        text-align: left;
+    }
+
+ .hero-img-container .hero-img-inner {
+        gap: 42px;
+    }
+
+ .hero-img-left {
+            margin-top: 24px;
+            height: 307px;
+            width: 87px;
+        }
+
+        .hero-img-right .hero-img-top {
+                height: 145px;
+                width: 70px;
+            }
+
+            .hero-img-right .hero-img-bottom {
+                    height: 101px;
+                    width: 70px;
+                    margin-top: 14px;
+                }
+
+    .values-card-container{
+        margin: 16px 0 0 16px;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .mission-container {
+        margin-bottom: 40px;
+        margin-left: 16px;
+    }
+
+    .mission-card-container {
+        margin-top: 16px;
+        flex-direction: row;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .mission-card {
+        width: 100%;
+        height: inherit;
+        padding: 24px;
+        margin-bottom: 30px;
+        background: #f3f3f3;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%, 0 0);
+    }
+
+    .mission-card h6 {
+        padding-top: 0;
+    }
+
+    .mission-card p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+   .our-values-wrapper {
+        margin-top: 0;
+        padding: 40px 0;
+        background: #f1f1f1;
+        text-align: left;
+        clip-path: unset;
+    }
+
+
+}

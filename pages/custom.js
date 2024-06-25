@@ -24,13 +24,13 @@ class CustomHeader extends HTMLElement {
                 <a href="#">SCOOTERS</a>
             </div>
             <div class="headmiddle">
-             <a href="index.html">
+             <a href="/index.html">
                 <div class="headlogo"><img src="/Images/logo.svg" alt=""></div>
                 <div class="headtext"><span>MODERN AUTO AGENCY</span></div>
                 </a>
             </div>
             <div class="headlast">
-                <a href="pages/about.html">ABOUT</a>
+                <a href="/pages/about.html">ABOUT</a>
                 <a href="#">TESTRIDE</a>
                 <a href="#">EXCHANGE</a>
                 <a class="headphone" href="tel:+91 9431466219">
@@ -63,8 +63,8 @@ class CustomSection extends HTMLElement {
         <div class="footbottom">
             <div class="footmen ">
                 <div class="page-width foone">
-                    <span><a href="index.html">HOME</a></span>
-                    <span><a href="pages/about.html">ABOUT</a></span>
+                    <span><a href="/index.html">HOME</a></span>
+                    <span><a href="/pages/about.html">ABOUT</a></span>
                     <span><a href="/pages/contact.html">CONTACT</a></span>
                 </div>
             </div>
