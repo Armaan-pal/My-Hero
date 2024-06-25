@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">    
     <title>Contact Us</title>
 </head>
 <body>
+
+<script src="/pages/custom.js"></script>
+    <custom-header></custom-header>
+    <div class="contactus">
+        <div class=" spacetopbottom">
+                <img src="/Images/karizma-know-web.png" alt="">
+        </div>
     
+    <div class="tabtexthero page-width contacttab spacetopbottom">
+        <h2>EXPLORE OUR PRODUCTS</h2>
+        <P>Check out our range of motercycles and scooters with exciting features and latest technolgy</P>
+        <div class="tabhero">
+
+            <div class="tabbtm">
+                <button class="tablinkscon" onclick="openCitycon(event, 'media')" id="defaultOpencon">Media</button>
+                <button class="tablinkscon" onclick="openCitycon(event, 'showroom')">showroom</button>
+            </div>
+
+            <div id="media" class="tabcontentcon">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore in ducimus pariatur
+                            id officiis, tempore cum eaque! Ab et quam aspernatur deserunt voluptas modi eligendi atque.
+                            Cupiditate cumque possimus obcaecati debitis amet molestiae perspiciatis doloremque!</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+            <div id="showroom" class="tabcontentcon">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Ground Floor, NH 727 Mansa Tola Bettiah - 845438</p>
+                        <p>Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India </p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+            <div id="carrer" class="tabcontentcon">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Email:maabth@gmail.com</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<custom-section></custom-section>
+
+    <script>
+    function openCitycon(evt, cityName) {
+        var i, tabcontentcon, tablinkscon;
+        tabcontentcon = document.getElementsByClassName("tabcontentcon");
+        for (i = 0; i < tabcontentcon.length; i++) {
+            tabcontentcon[i].style.display = "none";
+        }
+        tablinkscon = document.getElementsByClassName("tablinkscon");
+        for (i = 0; i < tablinkscon.length; i++) {
+            tablinkscon[i].className = tablinkscon[i].className.replace(" activecon", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " activecon";
+    }
+    document.getElementById("defaultOpencon").click();
+    </script>
 </body>
 </html>

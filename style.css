@@ -138,6 +138,10 @@ a {
     font-family: 'tstar-medium';
     text-decoration: none;
 }
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .swiper {
     width: 100%;
@@ -339,7 +343,7 @@ header a {
     border-bottom: 2px solid red;
 }
 
-.tabbtm button.activebtm {
+.tabbtm button.activebtm, .tabbtm button.activecon{
     color: red;
     font-weight: 600;
     border-bottom: 2px solid red;
@@ -794,7 +798,7 @@ form .button input:hover {
     font-size: 32px;
 }
 
-#about {
+#about, #media, #showroom {
     padding-top: 53px;
 }
 
@@ -1060,11 +1064,17 @@ header a:hover {
     padding: 12px;
 }
 
-.headmiddle {
+.headmiddle a{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 23px;
+}
+
+.headmiddle a:hover{
+    text-decoration: none;
+    font-size: unset;
+    font-weight: unset;
 }
 
 #executive .herobikeimg, #performance .herobikeimg{
