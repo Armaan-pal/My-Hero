@@ -1122,6 +1122,62 @@ header a:hover {
     display: block;
 }
 
+#media .abouttabcon {
+    width: 100%;
+    padding: 32px 0 32px 0;
+    background: lightgrey;
+    box-shadow: 0 19px 34px 0 rgba(0, 0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+    border: 0;
+}
+
+
+#media  .abouttxt p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+#media  .abouttxt p span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    gap: 9px;
+}
+
+.abouttxt p{
+    margin-bottom: 0;
+}
+
+.mobcon{
+    display: none;
+}
+
+.deskcon{
+    display: block;
+}
+
+.con-text p{
+    color: #fff;
+    font-size: 56px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100% !important;
+    height: 116px;
+    margin-left: 120px;
+    max-width: 740px;
+}
+
+.con-text{ position: absolute;
+top: 104px;}
+
+.ban{
+    position: relative;
+}
+
 @media(max-width:1400px) {
     .helpyou{
         max-width: 1286px;
@@ -1132,6 +1188,42 @@ header a:hover {
 }
 
 @media(max-width:768px) {
+
+    .con-text{ top: 50px;}
+
+    #media .abouttxt p span a {
+        font-size: 16px;
+    }
+
+    #media .abouttxt p{
+        flex-direction: column;
+    }
+
+    #showroom .abouttabcon{
+        gap: 19px;
+    }
+
+    .con-text p{
+        margin-top: 40px;
+        margin: auto;
+        align-items: center;
+        margin-left: 16px;
+    
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        max-width: 768px;
+    }
+
+    .deskcon{
+        display: none;
+    }
+
+
+    .mobcon{
+        display: block;
+    }
 
     .icon{
         text-align: unset;

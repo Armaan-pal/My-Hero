@@ -70,7 +70,7 @@ class CustomSection extends HTMLElement {
             </div>
             <div class="footmen  footmenborsty">
                 <div class="page-width fotwo">
-                    <div class="centerinfo address"><span>Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India
+                    <div class="centerinfo address"><span>Ground Floor, NH 727 Mansa Tola Bettiah - 845438
                         </span>
                         <span><a href="mailto: maabth@gmail.com">Email:maabth@gmail.com</a></span>
                         <span>Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India </span>
