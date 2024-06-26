@@ -1148,7 +1148,7 @@ header a:hover {
         border-bottom: 1px solid #fff;
         width: 100%;
         text-align: center;
-        padding: 19px;
+        padding: 9px;
     }
 
     .floatwid svg{
@@ -1242,14 +1242,27 @@ header a:hover {
     .scriptlay{
         width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .headlogomob a{
+        border-bottom: unset;
     }
 
     .headmiddle {
         width: 100%;
         align-items: center;
-        padding-top: 19px;
+        padding-top: 9px;
         margin-right: 0px;
         margin-bottom: 16px;
+        display: flex;
+    justify-content: center;
+    }
+
+    
+    .headtext span{
+        display: none !important;
     }
 
     .headlogomob {
@@ -1320,6 +1333,7 @@ header a:hover {
     .help-main-box {
         display: block;
         display: flex;
+        justify-content: center;
         gap: 23px;
         overflow: scroll;
         padding-left: 15px;
@@ -1460,10 +1474,19 @@ header a:hover {
 
     .helpyou h2 {
         MARGIN-BOTTOM: 19px;
+        text-align: center;
     }
 
     .help-box {
         margin-bottom: 28px;
+    }
+    .firsthero .swiper {
+        height: 333px;
+    }
+
+    .headlogomob span{
+        font-size: 13px;
+        display: none;
     }
 
     .motoimg {

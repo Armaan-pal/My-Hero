@@ -12,7 +12,7 @@ class CustomHeader extends HTMLElement {
 
             <div id="overlay"></div>
             <div class="headmiddle">
-                <div class="headlogomob"> <a href="index.html"><img src="/Images/logo.svg" alt=""></a><span>Moder Auto Agency</span></div>
+                <div class="headlogomob"> <a href="/index.html"><img src="/Images/logo.svg" alt=""></a><span>Moder Auto Agency</span></div>
             </div>
         </div>
 

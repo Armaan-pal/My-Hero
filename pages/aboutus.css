@@ -229,6 +229,7 @@
     line-height: 120%;
     font-style: normal;
 }
+
 .block--company-two-wheeler-mobility .banner2 p {
     color: #f3f3f3;
     text-align: center;
@@ -408,6 +409,7 @@
         font-size: 48px;
         width: 698px;
     }
+
     .block--company-two-wheeler-mobility .rank p {
         font-size: 180px;
     }
@@ -430,7 +432,7 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
     .block--company-two-wheeler-mobility .twoWheelerMobilityPara {
         width: 100%;
@@ -499,58 +501,84 @@
         width: 100%;
         font-size: 42px;
     }
-    .vision-wrapper{
+
+    .vision-wrapper {
         flex-direction: column;
         gap: 56px;
 
     }
 
- .vision-container {
+    .vision-container {
         margin: 0 16px;
     }
 
- .vision-heading {
+    .vision-heading {
         margin-top: 16px;
         width: 253px;
     }
 
- .vision-heading h4, .vision-heading h4 span {
+    .vision-heading h4,
+    .vision-heading h4 span {
         font-size: 40px !important;
         line-height: normal !important;
     }
 
-    .block--company-two-wheeler-mobility .rank p ,  .block--company-two-wheeler-mobility .rank p span{
+    .block--company-two-wheeler-mobility .rank p,
+    .block--company-two-wheeler-mobility .rank p span {
         font-size: 66px !important;
         text-align: left;
     }
 
- .hero-img-container .hero-img-inner {
+    .hero-img-container .hero-img-inner {
         gap: 42px;
     }
 
- .hero-img-left {
-            margin-top: 24px;
-            height: 307px;
-            width: 87px;
-        }
+    .hero-img-left {
+        margin-top: 24px;
+        height: 307px;
+        width: 87px;
+    }
 
-        .hero-img-right .hero-img-top {
-                height: 145px;
-                width: 70px;
-            }
+    .hero-img-right .hero-img-top {
+        height: 145px;
+        width: 70px;
+    }
 
-            .hero-img-right .hero-img-bottom {
-                    height: 101px;
-                    width: 70px;
-                    margin-top: 14px;
-                }
+    .hero-img-right .hero-img-bottom {
+        height: 101px;
+        width: 70px;
+        margin-top: 14px;
+    }
 
-    .values-card-container{
-        margin: 16px 0 0 16px;
-        flex-direction: row;
+    .values-card-container {
+        padding: 0 16px;
+        /* flex-direction: row; */
         gap: 16px;
         width: 100%;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
     }
+
+.our-values-card {
+        width: 100%;
+        height: inherit;
+        padding: 40px 24px;
+        margin-bottom: 30px;
+        align-items: center;
+        background: #FFF;
+        backdrop-filter: blur(22px);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%, 0 0);
+    }
+
+    .our-values-container{
+        padding: 0 !important;
+    }
+
+   .our-values-title {
+        margin-left: 16px;
+    }
+
+
 
     .mission-container {
         margin-bottom: 40px;
@@ -582,7 +610,7 @@
         width: 100%;
     }
 
-   .our-values-wrapper {
+    .our-values-wrapper {
         margin-top: 0;
         padding: 40px 0;
         background: #f1f1f1;
