@@ -12,27 +12,26 @@ class CustomHeader extends HTMLElement {
 
             <div id="overlay"></div>
             <div class="headmiddle">
-                <div class="headlogomob"> <a href="/index.html"><img src="/Images/logo.svg" alt=""></a><span>Moder Auto Agency</span></div>
+                <div class="headlogomob"> <a href="https://maahero.com/index.html"><img src="/Images/logo.svg" alt=""></a><span>Moder Auto Agency</span></div>
             </div>
         </div>
 
         <div class="tophead">
             <div class="headfirst">
-                <a href="#">NEWLAUNCH</a>
-                <a href="#">MOTERCYCLE</a>
-
-                <a href="#">SCOOTERS</a>
+                <a href="#defaultOpen">NEWLAUNCH</a>
+                <a href="#perfor"  onclick="document.getElementById('perfor').click();">MOTERCYCLE</a>
+                <a href="#scoote" onclick="document.getElementById('scoote').click();">SCOOTERS</a>
             </div>
             <div class="headmiddle">
-             <a href="/index.html">
+             <a href="https://maahero.com/index.html">
                 <div class="headlogo"><img src="/Images/logo.svg" alt=""></div>
                 <div class="headtext"><span>MODERN AUTO AGENCY</span></div>
                 </a>
             </div>
             <div class="headlast">
-                <a href="/pages/about.html">ABOUT</a>
+                <a href="https://maahero.com/pages/about.html">ABOUT</a>
                 <a href="#">TESTRIDE</a>
-                <a href="#">EXCHANGE</a>
+                <a href="https://maahero.com/pages/contact.html">EXCHANGE</a>
                 <a class="headphone" href="tel:+91 9431466219">
                     <svg fill="red" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 342.514 342.514" xml:space="preserve"
@@ -63,9 +62,9 @@ class CustomSection extends HTMLElement {
         <div class="footbottom">
             <div class="footmen ">
                 <div class="page-width foone">
-                    <span><a href="/index.html">HOME</a></span>
-                    <span><a href="/pages/about.html">ABOUT</a></span>
-                    <span><a href="/pages/contact.html">CONTACT</a></span>
+                    <span><a href="https://maahero.com/index.html">HOME</a></span>
+                    <span><a href="https://maahero.com/pages/about.html">ABOUT</a></span>
+                    <span><a href="https://maahero.com/pages/contact.html">CONTACT</a></span>
                 </div>
             </div>
             <div class="footmen  footmenborsty">
@@ -79,14 +78,6 @@ class CustomSection extends HTMLElement {
                     <div class="centerinfo">
                         <span>GSTN - 10AAEFM6429M1Z9</span>
                         <div class="sociallink">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                    fill="none">
-                                    <path
-                                        d="M11.8712 25.0361C20.2759 25.0361 24.8786 18.0685 24.8786 12.0287C24.8786 11.8286 24.8786 11.6285 24.8604 11.4466C25.7518 10.8099 26.534 9.99122 27.1344 9.08161C26.3157 9.44545 25.4243 9.68195 24.5147 9.80929C25.4607 9.24534 26.1884 8.35392 26.534 7.28058C25.6426 7.80816 24.6784 8.19019 23.6233 8.39031C22.7865 7.49889 21.604 6.95312 20.2941 6.95312C17.7654 6.95312 15.7279 9.00884 15.7279 11.5194C15.7279 11.8832 15.7643 12.2289 15.8371 12.5563C12.0349 12.3562 8.66935 10.537 6.41352 7.77177C6.01329 8.44488 5.79499 9.22714 5.79499 10.064C5.79499 11.6467 6.59544 13.0475 7.83251 13.8661C7.08663 13.848 6.37714 13.6296 5.7586 13.3022C5.7586 13.3204 5.7586 13.3386 5.7586 13.3568C5.7586 15.5762 7.34132 17.4136 9.43342 17.832C9.05138 17.9412 8.65115 17.9958 8.23274 17.9958C7.94166 17.9958 7.65059 17.9594 7.3777 17.9048C7.95985 19.724 9.65172 21.052 11.6529 21.0884C10.0701 22.3255 8.10539 23.0532 5.95872 23.0532C5.59487 23.0532 5.23103 23.035 4.86719 22.9804C6.88652 24.2902 9.28788 25.0361 11.8712 25.0361Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none">
@@ -115,14 +106,7 @@ class CustomSection extends HTMLElement {
             </div>
             <div class="footmen ">
                 <div class="page-width fothre">
-                    <div class="botfoot">
-                        <span>Privacy Policy</span>
-                        <span>Desclaimer</span>
-                        <span>Terms of Use</span>
-                        <span>Rules & Regulations</span>
-                        <span>Data Colletion Contract</span>
-                        <span>Sitemap</span>
-                    </div>
+                 
                     <div class="lastspan">
                     <span class="righttxt">Cpoyright Modern Auto Agency 2024. All Right Reserved</span>
                     </div>
