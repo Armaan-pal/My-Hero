@@ -1258,6 +1258,13 @@ option {
 
 @media(max-width:768px) {
 
+    .beaherop {
+        padding: 0 15px;
+    }
+
+    .tab, .tabbtm{
+        justify-content: unset;
+    }
     .con-text {
         top: 50px;
     }
@@ -1272,6 +1279,10 @@ option {
 
     #showroom .abouttabcon {
         gap: 19px;
+    }
+
+    footer a {
+        font-size: 16px;
     }
 
     .con-text p {
@@ -1338,7 +1349,7 @@ option {
     }
 
     footer span {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .foone,
@@ -1416,11 +1427,31 @@ option {
     .headmiddle {
         width: 100%;
         align-items: center;
-        padding-top: 9px;
-        margin-right: 0px;
+        /* padding-top: 9px;
+        margin-right: 0px; */
         margin-bottom: 16px;
         display: flex;
         justify-content: center;
+    }
+
+    .abouttxt span{
+        font-size: 13px;
+    }
+
+    iframe{
+        width: 330px;
+        margin-top: 36px;
+    }
+
+    #carrer .aboutbikeimg{
+        margin-top: 36px;
+    }
+
+    .headmiddle a{
+        border-bottom: unset;
+        padding: 0;
+        margin: 0;
+        
     }
 
 
@@ -1499,7 +1530,7 @@ option {
         justify-content: center;
         gap: 23px;
         overflow: scroll;
-        padding-left: 15px;
+        /* padding-left: 15px; */
     }
 
     .helpyou {
@@ -1641,13 +1672,21 @@ option {
     }
 
     .help-box {
-        margin-bottom: 28px;
+        margin-bottom: unset;    
+        align-items: center;
     }
 
     .firsthero .swiper {
-        height: 333px;
+        height: 179px;
     }
 
+    #executive .herobikeimg, #performance .herobikeimg, #scooters .herobikeimg
+        {
+        width: 153px;
+    }
+
+    .scootransl{   transform: scaleX(-1);
+    }
     .headlogomob span {
         font-size: 13px;
         display: none;

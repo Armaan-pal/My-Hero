@@ -586,8 +586,8 @@
     }
 
     .mission-card-container {
-        margin-top: 16px;
-        flex-direction: row;
+        /* margin-top: 16px; */
+        flex-direction: column;
         overflow: scroll;
         width: 100%;
     }
@@ -596,7 +596,7 @@
         width: 100%;
         height: inherit;
         padding: 24px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         background: #f3f3f3;
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%, 0 0);
     }
